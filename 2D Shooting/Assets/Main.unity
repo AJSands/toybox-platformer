@@ -172,7 +172,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 40152486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9400004, y: 2.61, z: -10}
+  m_LocalPosition: {x: -1.9400003, y: 2.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1072766135}
@@ -788,6 +788,7 @@ GameObject:
   - component: {fileID: 820667358}
   - component: {fileID: 820667359}
   - component: {fileID: 820667360}
+  - component: {fileID: 820667361}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -1011,7 +1012,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 820667350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9f2e3da3d0d1de4491739e280d1ce7e, type: 3}
   m_Name: 
@@ -1035,6 +1036,27 @@ MonoBehaviour:
   firePoint: {fileID: 642016380}
   bulletPrefab: {fileID: 1539632861300792, guid: 96ae8f9dd8fd89941bc4d858375f035b,
     type: 2}
+--- !u!114 &820667361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820667350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888c72bcfea8e144bb0bf77019f20e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 642016380}
+  bulletPrefab: {fileID: 1539632861300792, guid: 96ae8f9dd8fd89941bc4d858375f035b,
+    type: 2}
+  auto: 1
+  fireRate: 0.075
+  magazineCapacity: 50
+  reloadTime: 2
+  ammo: 500
+  pelletCount: 5
+  sprayRange: 4
 --- !u!1 &981602203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,7 +1161,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1000398609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9400004, y: 2.61, z: -10}
+  m_LocalPosition: {x: -1.9400003, y: 2.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 142962750}
